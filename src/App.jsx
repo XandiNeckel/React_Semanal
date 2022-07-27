@@ -1,6 +1,9 @@
 import "./App.css";
 import Header from "./components/Header/Header.jsx";
 import CardProdutos from "./components/CardProdutos/CardProdutos.jsx";
+// import Divisor from "./components/Divisor/Divisor.jsx";
+// import Forms from "./components/Forms/Forms.jsx";
+// import Text from "./components/Text/Text.jsx";
 import { useEffect, useState } from "react";
 
 function App() {

@@ -5,8 +5,13 @@ article{
     align-items: center;
     width: 150px;
     height: 300px;
-    background-color: red;
+    background-color: rgb(14, 1, 1);
   
+}
+button{
+    width: 120px;
+    align-items: center;
+    justify-content: center;
 }
 article figure{
     width: 100%;
@@ -16,6 +21,8 @@ article figure{
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-between;
+    border-radius: 20px;
+    
 }
 article > figure > img{
     width: 100%;
