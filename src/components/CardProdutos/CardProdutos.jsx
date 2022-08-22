@@ -1,25 +1,24 @@
 import React from "react";
-import './CardProdutos.css';
+import S from "./CardProdutos.module.css";
 
-function CardProdutos({img,title,descri,precoAnterior,precoAtual,parcelas,qtdParcelas}){
-    return(
-        <article>
-            <figure style={{'backgroundImage':`url(${img})`}}>
-                
-            </figure>
-                <figcaption>{title}</figcaption>
-            <span>
-               {descri}
-            </span>
-            <p>
-            
-            <small>De: {precoAnterior}</small> 
-            <strong>Para: {precoAtual}</strong>
-            <small>ou {qtdParcelas} de: {parcelas}</small>
-            </p>
+const CardProdutos = ({ dados }) => {
+  const { id, name, image, description, oldPrice, price } = dados;
+  return (
+    <div className={S.card}>
+      <img src={image} alt="" />
+      <div>
+        <h3>{name}</h3>
+        <p className={S.description}>{description}</p>
+        <small>
+          DE: <span>R${oldPrice}</span>
+        </small>
+        <p className={S.price}>
+          Por: <span>R${price}</span>
+        </p>
         <button>Comprar</button>
-        </article>
-    )
-}
+      </div>
+    </div>
+  );
+};
 
 export default CardProdutos;
