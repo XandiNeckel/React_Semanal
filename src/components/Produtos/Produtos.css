@@ -1,0 +1,27 @@
+.produtos{
+    display: flex;
+    flex-wrap: wrap;
+    width: 60%;
+    gap: 30px
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+    gap: 30px;
+}
+
+.content>button{
+    text-align: center;
+    width: 15%;
+    height: 35px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 4px;
+    color: #6d6c6c;
+    background-color: #FFFFFF;
+    border: #6d6c6c 1px solid;
+}

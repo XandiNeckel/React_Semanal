@@ -1,8 +1,14 @@
 import React from "react";
-import './Divisor.css'
+import S from "./Divisor.module.css";
 
-function Divisor(){
-    return(
-        <b>________________</b>
-    )
-}
+const Divisor = (props) => {
+  return (
+    <div className={S.divPai}>
+      <div></div>
+      <p>{props.text}</p>
+      <div></div>
+    </div>
+  );
+};
+
+export default Divisor;

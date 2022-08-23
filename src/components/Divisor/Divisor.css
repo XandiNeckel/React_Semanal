@@ -1,0 +1,13 @@
+.divPai{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 22px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.divPai>div{
+    width: 300px;
+    border-bottom: 1px solid #6d6c6c;
+}
